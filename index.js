@@ -26,6 +26,7 @@ if (!validOperation.includes(operation)){
             case "-":
                 return firstNum - secondNum;
             case "/":
+                if(secondNum === 0) return "Undefined. You Cannot Divide by Zero"
                 return firstNum / secondNum;
             case "*":
                 return firstNum * secondNum;
